@@ -265,21 +265,39 @@ OK 正题： html有固定的格式如下
  格式完了就该内容了
  大家都知道html是标记语言，所以呢，一个个有语意或者没有语意的标签就是她的
  核心了。从最常用的标签开始总结：
+
  \<span class="tag">&lt;<span class="title">div</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>上面说过就不再说了
+
+
  \<span class="tag">&lt;<span class="title">html</span>&gt;</span><span class="tag">&lt;/<span class="title">html</span>&gt;</span>双标签 所有的代码都写在里面 可以设背景,宽高(可以设百分比)边框外边距内边
  距定位和浮动 给她设置背景会铺满整个可视区域 
  设置定位不会覆盖她里面的类容，设置了绝对定位和固定定位后她本身的浮动会失效。
+
+
  \<span class="doctype">&lt;!doctype html&gt;</span>头文档声明 告诉浏览器该文档使用html的规范，这个呢其实就是html5的头声明。
+
+
  \<span class="tag">&lt;<span class="title">head</span>&gt;</span><span class="tag">&lt;/<span class="title">head</span>&gt;</span>双标签 她是所有头部元素的容器。默认display:none;
+
+
  \<span class="tag">&lt;<span class="title">body</span>&gt;</span><span class="tag">&lt;/<span class="title">body</span>&gt;</span>双标签 她有默认外边距8px 默认display：block；
+
+
  \<span class="tag">&lt;<span class="title">title</span>&gt;</span><span class="tag">&lt;/<span class="title">title</span>&gt;</span>双标签 她叫标题标签 也叫title tag 她包含着关键词 能决定网站的搜索排行 
  她是属于head标签内部用来定义页面文档的标题 是SEO中最为关键的优化项目之一 
  网页的标题标签有效长度是64个字节汉子32个字。多出来的则无益有弊
+
+
  \<span class="tag">&lt;<span class="title">meta</span>/&gt;</span>单标签要注意关闭 在里面我只用过charset＝“utf-8” 告诉浏览器这个文档要用utf-8 的字符显示 
  当然它还有很多其他用途和属性 只能慢慢积累
+
+
  \<span class="tag">&lt;<span class="title">link</span>/&gt;</span>单标签 标签定义文档与外部资源的关系，最常见的用途是链接样式 link 元素是空元素
  她仅包含属性 她只能存在于head部分，没有次数限制。她的rel属性是规定当前文档与被链接文档之间的关系
  type属性是规定被链接文档类型 herf是被链接文档的路径。（刚开始写样式出bu来，基本都是忘记link了）
+
+
+ <span class="comment">&lt;!--我就是一个注释--&gt;</span>要养成写注释的好习惯，方便自己也方便别人。
 </code></pre>
             
           </span>
