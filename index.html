@@ -242,6 +242,63 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-css备忘录" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/02/26/css备忘录/" class="article-date">
+  	<time datetime="2016-02-26T01:34:31.000Z" itemprop="datePublished">2016-02-26</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/02/26/css备忘录/">css备忘录</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="css引入方式">css引入方式</h1><p>1 外部引入：在html的head部分<br><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css文件路径&quot;&gt;</code><br>2 头部引入：在head部分加入<br><code>&lt;style&gt;css代码写在这里&lt;/style&gt;</code><br>3 标签引入：直接写在页面标签里<br><code>&lt;div style=&quot;background:red;width:200px&quot;&gt;&lt;/div&gt;</code><br>4 @import url()引入：属于css2，不常用，不能用dom控制 ie5不支持<br><code>link是在加载页面前把css加载完毕，而@import url（）则是读取完文件后在加载，所以会出现一开始没有css样式，闪烁一下出现样式后的页面</code>  </p>
+<h1 id="css选择器">css选择器</h1><p>1 标签选择器：直接使用html标签作为选择器，一般用来设置默认属性或者和后代选择器一起使用<br>2 类选择器：.classname{}<br>特点:可以给不同标签设置同一个类来添加样式，减少代码量，方便修改等<br>命名规范：第一个字符不能使用数字，尽量参考大神们的国际标准命名<br>3 id选择器：#idname｛｝id具有唯一性<br>4 层级选择器：如.xxx span img{} 后代选择器实际上是使用多个选择器加上中间的空格来找到具体的要控制的标签。<br>5 分组选择器：如.xxx,span,img{} 实际上是对css的一种简化写法，是把具有相同css样式的不同选择器放在一起，减少代码量<br>6 通配选择器：* 很少用<br>7 伪类选择器：  </p>
+<h2 id="css选择器中的属性顺序">css选择器中的属性顺序</h2><p>显示属性：display list-style position float clear<br>自身属性：width height margin padding border background<br>文本属性：color font text-decoration text-align vertical-align white-space content<br>符合浏览器的渲染顺序，最终达到提高执行效率的目的  </p>
+<h1 id="css优先级">css优先级</h1><p>标签内嵌样式&gt;头部书写样式&gt;外部引用样式&gt;浏览器默认样式<br>css选择器的优先级：id&gt;class&gt;标签选择器<br>id＝100 class＝10 标签选择器＝1<br>！important：在css属性后面标明具有最高的优先级 不能被覆盖  </p>
+<h1 id="盒模型">盒模型</h1><p>完整的盒模型是由content border padding margin 四部分组成  </p>
+<h1 id="a标签的4个伪类">a标签的4个伪类</h1><p>link 未被访问前的样式表属性<br>visited 链接地址已被访问过的样式表属性<br>hover 鼠标悬停时的样式表属性<br>active 鼠标点击未释放时发生的事件<br><code>: 伪类</code><br><code>:: 伪元素</code>  </p>
+<p>未完待续</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
     <article id="post-one" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
